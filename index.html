@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-list</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/fc6db9a58c.js" crossorigin="anonymous"></script>
     <script defer src="./js/login.js"></script>
     <script defer src="./js/clock.js"></script>
 </head>
 <body>
-    <form class="hidden" id="login-form">
-        <input type="text" required placeholder="Who are you?" maxlength="10">
-        <button type="submit" value="Enter"></button>
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <h2 id="clock"></h2>
+    <div id="wrap">
+        <form class="hidden" id="login-form">
+            <input type="text" required placeholder="Text your name" maxlength="8">
+            <button class="btn" type="submit" value="Enter"><i class="fas fa-sign-in-alt fa-2x"></i></button>
+        </form>
+        <h1 class="hidden" id="greeting">hello</h1>
+        <button class="btn hidden trashBtn"><i class="fas fa-trash fa-2x"></i></button>
+        <h2 id="clock">00:00:00</h2>
+    </div>
+    <div class="hidden" id="cinema">
+    </div>
 </body>
 </html>
